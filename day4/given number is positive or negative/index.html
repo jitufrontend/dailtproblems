@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        </style>
 </head>
+<h1>The Number is Positive Or Negative</h1>
 <form action="" id="frm">
-    <input type="text" placeholder="enter number" id="num">
-    <input type="submit" value="submit">
+    <input type="number" placeholder="enter number" id="num">
     <p class="result"></p>
 </form>
 <body>

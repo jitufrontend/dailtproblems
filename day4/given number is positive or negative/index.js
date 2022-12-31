@@ -1,14 +1,17 @@
 // number is positive or negative
 let form = document.getElementById("frm");
-let number = document.getElementById("num").value;
 let result = document.querySelector(".result");
-form.addEventListener("submit",(e)=>{
+form.addEventListener("keyup",(e)=>{
     e.preventDefault();
-    if(number >= 0){  
-        result.innerHTML = "number is positive";
+    let number = document.getElementById("num").value;
+    if(number > 0){  
+        result.innerHTML = "positive number";
     }
     else if(number < 0){  
-        result.innerHTML = "number is negative";
+        result.innerHTML = "negative number";
+    }
+    else if(number.length ==0){
+        result.innerHTML = "";
     }
 })
 
